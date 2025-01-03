@@ -1,6 +1,6 @@
 from tools import *
 
-def zadanie2(message: list, pL, pW, pS):
+def get_probabilities(message: list, pL, pW, pS):
     # Oblicz prawdopodobieństwa dla każdego języka
     # dlatver: lista symboli dla języka L
     # pdlatver: rozkład prawdopodobieństwa dla języka L
@@ -29,9 +29,10 @@ def zadanie2(message: list, pL, pW, pS):
     # Obliczamy prawdopodobieństwa wiadomości dla każdego języka
     p_ML = p_MW = p_MS = 1
     for i in message:
-        p_ML = p_ML * pdlatver[i]
-        p_MW = p_MW * pdwak[i]
-        p_MS = p_MS * pdwak[i]
+        if i != "N":
+            p_ML = p_ML * pdlatver[i]
+            p_MW = p_MW * pdwak[i]
+            p_MS = p_MS * pdwak[i]
 
         # Całkowite prawdopodobieństwo wiadomości (normalizacja)
         pM = (p_MS * pS) + (p_MW * pW) + (p_ML * pL)

@@ -26,6 +26,16 @@ Funkcja wiarogodności mierzy zgodność obserwowanych danych (wiadomości M) z 
 
 >  Czy przyjęte początkowo rozkłady a priori mają wpływ na ostateczną klasyfikację?
 
+Tak, zmiana charakterystyk początkowych a priori wprost zmienia różnicę między prawdopodobieństwami L, S, które nie są charakterystyczne dla danej wiadomości. Ale po odpowiedniej ilości rund prawdopodobieństwo tego wiadomość została napisana w języku W zwiększa się blisko 1. Więc a priori nie zmienia znacząco odpowiedzi funkcji wiarygodności.
 
+> Zaproponuj i uzasadnij sensowną metodę stopu umożliwiającą zakończenie procedury aktualzacji bez
+czytania całej wiadomości message
+
+Jeżeli po wystarczającej ilości rund przemnożenia prawdopodobieństw literek wiadomości w języku odpowiedż funkcji wiarygodności zbliża się wartości granicznej 1, możemy uznać że taka wiadomośc została napisana w tym języku.
+
+>  4 zadanie 
+> > Opisz uzyskane wnioski i spostrzeżenia.
+
+Wybraliśmy symbole C oraz D. Teraz oceniamy tylko prawdopodobieństwa pojawiania się tych symboli w językach i po narysowaniu wykresów widzimy że zależy wynik wprost od prawdopodobieństwa wybrania konkretnego języka, zatem wynika z tego równość prawdopodobieństwa pojawiania się tych wybranych symboli we wszystkich językach. 
 
 ___
